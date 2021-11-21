@@ -227,6 +227,7 @@ figcaption {
 
 .logo {
   height: 19px;
+  color: #fff;
 }
 
 .brand {
@@ -259,7 +260,7 @@ figcaption {
 .nav-link {
   padding: 11px 20px;
   border-radius: 50px;
-  color: rgba(32, 59, 83, 0.77);
+  color: #fff;
   font-size: 16px;
   line-height: 130%;
   font-weight: 600;
@@ -271,7 +272,7 @@ figcaption {
 }
 
 .nav-link.w--current {
-  color: #161819;
+  color: #fff;
 }
 
 .nav-button {
@@ -440,6 +441,10 @@ figcaption {
   display: block;
   max-width: none;
   margin-bottom: 0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -648,6 +653,7 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   max-width: none;
+  margin-bottom: 0%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -750,7 +756,7 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   width: auto;
-  margin-top: 10px;
+  margin-top: 10%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -820,8 +826,8 @@ figcaption {
 }
 
 .icon-sequence {
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: auto;
 }
 
 .number-sequence {
@@ -2473,8 +2479,7 @@ figcaption {
   top: auto;
   right: auto;
   bottom: auto;
-  display: inline-block;
-  overflow: hidden;
+  display: block;
   width: 100vw;
   height: 100vh;
   -webkit-box-orient: vertical;
@@ -2482,7 +2487,9 @@ figcaption {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  box-shadow: 1px 1px 3px 0 #000;
   opacity: 1;
+  text-shadow: 1px 1px 6px #000;
   -o-object-fit: fill;
   object-fit: fill;
 }
@@ -2499,9 +2506,9 @@ figcaption {
 .heading-4 {
   position: -webkit-sticky;
   position: sticky;
-  left: 16%;
+  left: auto;
   top: 52%;
-  right: 16px;
+  right: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2516,32 +2523,67 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #fff;
+  font-size: 200%;
   text-align: center;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.heading-4.counter {
+  left: auto;
+  top: 52%;
+  right: auto;
+  color: #f4faff;
 }
 
 .heading-5 {
   position: -webkit-sticky;
   position: sticky;
-  top: 38%;
+  top: 29%;
+  z-index: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: auto;
+  height: 200%;
+  max-height: 250%;
+  margin-top: 0px;
   margin-bottom: 0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 0px none #000;
+  background-color: transparent;
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  font-family: Manrope, sans-serif;
+  color: #fff;
+  font-size: 420%;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 0 1px 3px #000, 1px 0 3px #000;
+  mix-blend-mode: normal;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .bold-text-2 {
   position: -webkit-sticky;
   position: sticky;
   top: 0%;
+  color: #fff;
 }
 
 .heading-6 {
@@ -2701,7 +2743,7 @@ figcaption {
 }
 
 .youtube-2 {
-  margin-top: 35px;
+  margin-top: 0px;
 }
 
 .div-block {
@@ -2946,14 +2988,15 @@ figcaption {
 
 .image-3 {
   position: relative;
-  left: 15%;
+  left: auto;
   z-index: auto;
   display: inline-block;
-  overflow: visible;
   max-height: none;
   max-width: none;
   min-height: auto;
   min-width: auto;
+  margin-bottom: 8px;
+  margin-left: 0px;
   text-align: center;
   -o-object-fit: fill;
   object-fit: fill;
@@ -2982,12 +3025,114 @@ figcaption {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
+  text-align: center;
   -o-object-fit: fill;
   object-fit: fill;
 }
 
 .div-block-3 {
   text-align: center;
+}
+
+.bold-text-3 {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  opacity: 1;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 1px #000, 1px 0 1px #000;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.bold-text-3.heading-4 {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.grid-3 {
+  grid-template-areas: "dtzfzguh Area-2 Area-3 Area-4 Area-5";
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.columns-2 {
+  display: block;
+}
+
+.image-4 {
+  position: static;
+  left: 28px;
+  top: 80px;
+  margin-top: 36%;
+}
+
+.image-5 {
+  position: static;
+  left: 3px;
+  top: 41px;
+  margin-top: 18%;
+}
+
+.image-6 {
+  position: static;
+  left: 23px;
+  top: 83px;
+  margin-top: 36%;
+}
+
+.image-7 {
+  position: static;
+  left: 45px;
+  top: 84px;
+  margin-top: 36%;
+}
+
+.image-8 {
+  position: static;
+  left: 52px;
+  top: 36px;
+  margin-top: 17%;
+}
+
+.image-9 {
+  position: static;
+  left: 18px;
+}
+
+.div-block-4 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 41%;
+  display: block;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 991px) {
@@ -3182,6 +3327,14 @@ figcaption {
 
   .cards-grid-container {
     grid-column-gap: 20px;
+  }
+
+  .heading-4 {
+    top: 60%;
+  }
+
+  .heading-5 {
+    top: 41%;
   }
 
   .flex-wrap {
@@ -3520,6 +3673,22 @@ figcaption {
     grid-template-rows: auto auto auto;
   }
 
+  .heading-5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: auto;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    font-size: 150%;
+    text-align: center;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
   .subscribe-form {
     padding: 40px 20px;
   }
@@ -3602,6 +3771,10 @@ figcaption {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
+
+  .div-block-4 {
+    font-size: 250%;
   }
 }
 
@@ -3837,8 +4010,43 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
+  .heading-4 {
+    top: 53%;
+  }
+
   .heading-5 {
+    position: -webkit-sticky;
+    position: sticky;
+    left: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    clear: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 100%;
+    line-height: 100%;
     text-align: center;
+    text-transform: none;
+    -o-object-fit: contain;
+    object-fit: contain;
   }
 
   .heading-7 {
@@ -3931,6 +4139,23 @@ figcaption {
     position: relative;
     top: auto;
   }
+
+  .bold-text-3 {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
+  .div-block-4 {
+    display: block;
+  }
 }
 
 #w-node-_808e2b0f-83af-c4e7-e37e-55b2b7690a60-d2e4948b {
@@ -4000,3 +4225,10 @@ figcaption {
   }
 }
 
+@font-face {
+  font-family: 'Cafeta';
+  src: url('../fonts/CAFETA__.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
